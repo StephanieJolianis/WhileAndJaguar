@@ -1,8 +1,13 @@
-import { ObtenerCandidatos } from "../scripts/datos";
+import { ObtenerCiudades, ObtenerPreguntas, ObtenerData, ObtenerCandidatos } from "../scripts/datos";
 import Encabezado from "./Encabezado";
 
 const Dashboard = () =>{
+    let ciudades = ObtenerCiudades();
+    console.log("ciudades",ciudades);
+    let cosa = ObtenerPreguntas();
+    console.log("preguntas",cosa);
     ObtenerCandidatos("medellin");
+    ObtenerData("twitter","medellin").then(data => console.log(data));
     return (
         <div>
             <Encabezado/>

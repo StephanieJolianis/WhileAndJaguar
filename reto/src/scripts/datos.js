@@ -14,7 +14,6 @@ const ObtenerCandidatos = (ciudad) =>{
             foto: "fotos_candidatos/" + candidato.id + ".png"
         }
     });
-    console.log(objCandidatos)
     return objCandidatos;
 }
 
@@ -28,10 +27,9 @@ const ObtenerPreguntas = () =>{
     return listPreguntas;
 }
 
-const ObtenerData = async (red, ciudad) =>{
+const ObtenerData = (red, ciudad) => {
     let urlData = urlBase + ciudad +'/'+ red + '.json';
-    let response = await
-    fetch(urlData)
+    let response = fetch(urlData)
     .then((resp) => resp.json())
     .then(function(data) {
         return data
@@ -39,7 +37,6 @@ const ObtenerData = async (red, ciudad) =>{
   .catch(function(error) {
       return error
     });
-
     return response;
 }
 
