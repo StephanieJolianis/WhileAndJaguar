@@ -1,0 +1,25 @@
+ul.slider.animated{
+    width: 900px;
+}
+
+li.slide.selected{
+        display: flex;
+        align-items: center;
+        background: white;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid #673ab7;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #673ab7;
+}
+
+.carousel .control-dots .dot {
+    background:#673ab7;
+}
+
+div.carousel.carousel-slider{
+    height: 450px;
+}

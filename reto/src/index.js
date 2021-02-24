@@ -8,7 +8,7 @@ import "./styles/dashboard.css";
 import "./styles/seleccionCiudadCandidato.css";
 import "./styles/btnsRedSocial.css";
 import "./styles/modal.css";
-
+import "./styles/chartCandidate.css";
 
 ReactDOM.render(
   <React.StrictMode>

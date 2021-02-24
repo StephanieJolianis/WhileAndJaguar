@@ -11,7 +11,7 @@ import BtnsComparacion from "./BtnsComparacion";
 const Dashboard = () =>{
     const [candidato, setCandidato] = useState([]);
     const [ciudad, setCiudad] = useState("medellin");
-    const [redSocial, setRedSocial] = useState({});
+    const [redSocial, setRedSocial] = useState("all");
     const [ open, setOpen ] = useState(false);
 
     ObtenerCandidatos("medellin");
@@ -22,7 +22,6 @@ const Dashboard = () =>{
             <Encabezado/>
             <div className="titulo1Dashboard">
             <p className="dashboardtitle">Dashboard</p>
-            <p className="dashboardp">Para saberlo, se divide el número de palabras relacionadas con el tema escogido por el total de palabras que el candidato usó. El resultado se multiplica por 1000 para mayor claridad</p>
             </div>
             <CiudadCandidato 
             setCandidato={setCandidato}
@@ -30,13 +29,14 @@ const Dashboard = () =>{
             setCiudad={setCiudad}
             />
             <RedesSociales data={redSocial} setData={setRedSocial}/>
+                <div className="divCarrusel">
+                    <div className="contentCarrusel">
+                <ChartCandidate red={redSocial} ciudad={ciudad} candidato={candidato}/>
+                <SelectTema/>
+                </div>
+                </div>
             </div>
-            <div className="divCarrusel">
-                <div className="contentCarrusel">
-            <ChartCandidate red={redSocial} ciudad={ciudad}/>
-            <SelectTema/>
-            </div>
-            </div>
+
             <div className="section2">
                 <BtnsComparacion showModal={setOpen}/>
             <Modal show={open} close={setOpen}/>
