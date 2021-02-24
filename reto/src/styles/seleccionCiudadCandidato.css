@@ -1,0 +1,47 @@
+/* .divImgCandidato{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 1.5px solid #673AB7;
+} */
+
+.imgCandidato{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 2px solid #673AB7;
+}
+
+.seleccion1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:4em;
+}
+
+.seleccionCiudad{
+    display: flex;
+    font-family: 'Josefin Sans';
+    align-items: center;
+    width:15%;
+}
+
+.iconoCiudad{
+    width: 2em;
+}
+
+.seleccionCandidato{
+    display: flex;
+    font-family: 'Josefin Sans';
+    align-items: center;
+    width:15%;
+}
+
+.select{
+    border-style: none none solid;
+    background-color: #EEEEEE;
+    color: #8E8D90;
+    font-family: 'Josefin Sans';
+    outline: none;
+}
+

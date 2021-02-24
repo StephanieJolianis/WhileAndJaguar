@@ -1,26 +1,42 @@
 import { ObtenerCiudades, ObtenerPreguntas, ObtenerData, ObtenerCandidatos } from "../scripts/datos";
 import Encabezado from "./Encabezado";
+import CiudadCandidato from "./SelecciónCiudadCandidato";
+import RedesSociales from "./BtnsRedSocial";
+import ChartCandidate from "./ChartCandidate";
+import SelectTema from "./SelectTema";
+import { useState } from "react";
 
 const Dashboard = () =>{
-    let ciudades = ObtenerCiudades();
-    console.log("ciudades",ciudades);
-    let cosa = ObtenerPreguntas();
-    console.log("preguntas",cosa);
+    const [candidato, setCandidato] = useState([]);
+    const [ciudad, setCiudad] = useState("medellin");
+    const [redSocial, setRedSocial] = useState({});
+
     ObtenerCandidatos("medellin");
-    ObtenerData("twitter","medellin").then(data => console.log(data));
+
     return (
         <div>
-                        <Encabezado/>
+            <div className="section1">
+            <Encabezado/>
             <div className="titulo1Dashboard">
-            <p>Dashboard</p>
-            <p>Para saberlo, se divide el número de palabras relacionadas con el tema escogido por el total de palabras que el candidato usó. El resultado se multiplica por 1000 para mayor claridad</p>
+            <p className="dashboardtitle">Dashboard</p>
+            <p className="dashboardp">Para saberlo, se divide el número de palabras relacionadas con el tema escogido por el total de palabras que el candidato usó. El resultado se multiplica por 1000 para mayor claridad</p>
             </div>
-            <div id="seleccion"></div>
-            <p>aqui van el select de ciudad y candidato</p>
-            <div>
-                <p>aqui va el carrusel</p>
+            <CiudadCandidato 
+            setCandidato={setCandidato}
+            ciudad={ciudad}
+            setCiudad={setCiudad}
+            />
+            <RedesSociales data={redSocial} setData={setRedSocial}/>
             </div>
+            <div className="divCarrusel">
+                <div className="contentCarrusel">
+            <ChartCandidate red={redSocial} ciudad={ciudad}/>
+            <SelectTema/>
+            </div>
+            </div>
+            <div className="section2">
             <div><p>aqui va el versus</p></div>
+            </div>
         </div>
 )}
 

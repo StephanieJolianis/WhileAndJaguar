@@ -1,0 +1,79 @@
+.facebookUnselected{
+    width: 7em;
+    height: 2.5em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 0px 0px 5px;
+    border-style: none;
+    font-family: 'Josefin Sans';
+    font-size: medium;
+    color: #8E8D90;
+    outline:none;
+}
+
+.facebookSelected{
+    width: 7em;
+    height: 2.5em;
+    background: #673EB1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 0px 0px 5px;
+    border-style: none;
+    font-family: 'Josefin Sans';
+    font-size: medium;
+    color: #FFFFFF;
+    outline:none;
+}
+
+.twitterUnselected{
+    width: 7em;
+    height: 2.5em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-style: none;
+    font-family: 'Josefin Sans';
+    font-size: medium;
+    color: #8E8D90;
+    outline:none;
+}
+
+.twitterSelected{
+    width: 7em;
+    height: 2.5em;
+    background: #673EB1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-style: none;
+    font-family: 'Josefin Sans';
+    font-size: medium;
+    color: #FFFFFF;
+    outline:none;
+}
+
+.allUnSelected{
+    width: 7em;
+    height: 2.5em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 5px 5px 0px;
+    border-style: none;
+    font-family: 'Josefin Sans';
+    font-size: medium;
+    color:#8E8D90;
+    outline:none;
+}
+
+.allSelected{
+    width: 7em;
+    height: 2.5em;
+    background: #673EB1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 5px 5px 0px;
+    border-style: none;
+    font-family: 'Josefin Sans';
+    font-size: medium;
+    color:#FFFFFF;
+    outline:none;
+}
+
+.divRedes{
+    margin-top: 2em;
+}
