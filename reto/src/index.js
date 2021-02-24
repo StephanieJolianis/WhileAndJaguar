@@ -7,6 +7,7 @@ import  "./styles/encabezado.css";
 import "./styles/dashboard.css";
 import "./styles/seleccionCiudadCandidato.css";
 import "./styles/btnsRedSocial.css";
+import "./styles/modal.css";
 
 
 ReactDOM.render(

@@ -4,12 +4,15 @@ import CiudadCandidato from "./SelecciónCiudadCandidato";
 import RedesSociales from "./BtnsRedSocial";
 import ChartCandidate from "./ChartCandidate";
 import SelectTema from "./SelectTema";
+import Modal from "./Modal";
 import { useState } from "react";
+import BtnsComparacion from "./BtnsComparacion";
 
 const Dashboard = () =>{
     const [candidato, setCandidato] = useState([]);
     const [ciudad, setCiudad] = useState("medellin");
     const [redSocial, setRedSocial] = useState({});
+    const [ open, setOpen ] = useState(false);
 
     ObtenerCandidatos("medellin");
 
@@ -35,6 +38,8 @@ const Dashboard = () =>{
             </div>
             </div>
             <div className="section2">
+                <BtnsComparacion showModal={setOpen}/>
+            <Modal show={open} close={setOpen}/>
             <div><p>aqui va el versus</p></div>
             </div>
         </div>
