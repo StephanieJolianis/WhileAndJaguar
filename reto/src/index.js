@@ -3,7 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import  "./styles/encabezado.css"
+import  "./styles/encabezado.css";
+import "./styles/dashboard.css";
+import "./styles/seleccionCiudadCandidato.css";
+import "./styles/btnsRedSocial.css";
+import "./styles/modal.css";
+import "./styles/chartCandidate.css";
 
 ReactDOM.render(
   <React.StrictMode>
