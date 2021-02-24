@@ -1,0 +1,26 @@
+.divEncabezado{
+    background-color: #673AB7;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo2{
+    width: 48%;
+    margin-right: 2%;
+    text-align: end;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.titulo1{
+    width: 48%;
+    margin-left: 2%;
+    text-align: initial;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
