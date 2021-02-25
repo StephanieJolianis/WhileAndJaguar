@@ -159,7 +159,6 @@ const ChartCandidate = (props) => {
                     })
                 }
             break;
-
             default:
             break;
         }
