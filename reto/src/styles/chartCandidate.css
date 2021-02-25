@@ -12,6 +12,8 @@ li.slide.selected{
     border-left: 8px solid #673ab7;
 }
 
+
+
 .carousel .control-prev.control-arrow:before {
     border-right: 8px solid #673ab7;
 }
